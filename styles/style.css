@@ -1,1 +1,75 @@
 /* место для вашего кода */
+
+/* переменные для быстрого написание стилей*/
+
+:root {
+    --font-raleway: Raleway;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+}
+
+body {
+    font-family: var(--font-raleway);
+}
+
+.header {
+    padding: 96px 0;
+}
+
+/* Здесь написали стили к контейнеру для того чтобы весь контент страницы был по центру */
+
+
+
+.container {
+    width: 1250px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    place-items: center;
+}
+
+
+.header__menu-list {
+    display: flex;
+    gap: 32px;
+    text-wrap: nowrap;
+}
+
+.header__item,
+li {
+    list-style: circle;
+}
+
+.header__item:first-child {
+    list-style: none;
+
+}
+
+.header__logo {}
+
+.header__address-container {
+    padding: 0 0 0 105px;
+    font-size: 24px;
+}
+
+.remove-decoration {
+    text-decoration: none;
+}
+
+.header__link {
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    font-weight: var(--font-regular);
+}
+
+.header__address,
+.header__email {
+    display: block;
+    font-style: normal;
+}
