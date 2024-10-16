@@ -9,16 +9,19 @@
     --font-bold: 700;
 }
 
+/* Тут всем шрифтам сразу присвоил шрифт, чтобы не прописывать в каждый селектор */
+
 body {
     font-family: var(--font-raleway);
 }
+
+/* Стилизация шапки */
 
 .header {
     padding: 96px 0;
 }
 
 /* Здесь написали стили к контейнеру для того чтобы весь контент страницы был по центру */
-
 
 
 .container {
@@ -29,7 +32,7 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr;
     justify-content: center;
     place-items: center;
 }
@@ -51,21 +54,25 @@ li {
 
 }
 
-.header__logo {}
-
-.header__address-container {
-    padding: 0 0 0 105px;
-    font-size: 24px;
+.header__logo {
+    width: 148px;
+    max-width: 100%;
 }
 
-.remove-decoration {
+.header__address-container {
+    padding: 0 0 0 0;
+    font-size: 22px;
+}
+
+.no-underline {
     text-decoration: none;
 }
 
 .header__link {
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 0.01em;
     font-weight: var(--font-regular);
+    text-transform: lowercase;
 }
 
 .header__address,
@@ -73,3 +80,6 @@ li {
     display: block;
     font-style: normal;
 }
+
+/* Стилизация контента */
+
