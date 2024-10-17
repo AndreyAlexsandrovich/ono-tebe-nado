@@ -91,3 +91,98 @@ li {
 }
 
 /* Стилизация контента */
+
+.cover {
+    background: url(../images/cover.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 167px 0 62px 0;
+}
+
+.main__title {
+    font-weight: var(--font-bold);
+    font-size: 100px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #fff;
+    height: 355px;
+    max-height: 100%;
+}
+
+.aligned-text, .aligned-text_center, .aligned-text_right {
+    display: block;
+}
+
+.aligned-text {
+    text-align: left;
+    line-height: 115%;
+}
+
+.aligned-text_center {
+    text-align: center;
+    line-height: 130%;
+}
+
+.aligned-text_right {
+    text-align: right;
+    line-height: 109%;
+}
+
+
+.letter-spacing-extended {
+    letter-spacing: 0.6em;
+
+}
+
+.letter-spacing-extended__second {
+    letter-spacing: 0.6em;
+
+}
+
+.letter-spacing-extended__third { 
+    letter-spacing: 0.6em;
+}
+
+
+.no-letter-spacing { 
+    letter-spacing: 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cover__description {
+    padding: 130px 0 0 0;
+}
+
+.cover__description-text {
+    font-weight: var(--font-regular);
+    display: inline;
+    font-size: 22px;
+    line-height: 127%;
+    text-transform: uppercase;
+    color: #fff;
+    word-spacing: 1.3em;
+    padding: 0 23px;
+}
+
+
+
+.bet-button {
+    display: inline;
+    border: 1px #fff inset;
+    padding: 12px 32px;
+}
+
+
+.bet-button__text {
+    font-weight: var(--font-medium);
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
