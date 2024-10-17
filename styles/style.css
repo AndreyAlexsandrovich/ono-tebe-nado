@@ -25,7 +25,8 @@ body {
 
 
 .container {
-    width: 1250px;
+    width: 1100px;
+    padding: 0 50px 0 50px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -38,48 +39,54 @@ body {
 }
 
 
-.header__menu-list {
+.header__links-item {
     display: flex;
     gap: 32px;
     text-wrap: nowrap;
 }
 
-.header__item,
+.header__links-list-item,
 li {
     list-style: circle;
 }
 
-.header__item:first-child {
+.header__links-list-item:first-child {
     list-style: none;
 
 }
 
 .header__logo {
-    width: 148px;
+    width: 140px;
     max-width: 100%;
 }
 
-.header__address-container {
-    padding: 0 0 0 0;
-    font-size: 22px;
-}
+
 
 .no-underline {
     text-decoration: none;
 }
 
 .header__link {
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 0.01em;
     font-weight: var(--font-regular);
     text-transform: lowercase;
+}
+
+.header__address-container {
+    padding: 0 0 0 169px;
+    font-weight: var(--font-regular);
+    font-size: 18px;
+    line-height: 135%;
+    letter-spacing: 0.01em;
+    color: #000;
 }
 
 .header__address,
 .header__email {
     display: block;
     font-style: normal;
+    font-size: 18px;
 }
 
 /* Стилизация контента */
-
