@@ -174,7 +174,7 @@ li {
 
 .bet-button {
     display: inline;
-    border: 1px #fff inset;
+    border: 1px #fff solid;
     padding: 12px 32px;
 }
 
