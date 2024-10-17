@@ -2,20 +2,21 @@
 
 /* overlay для затеменения фона */
 
-.overlay { 
-  position: relative;
+.overlay {
+    position: relative;
 }
 
 .overlay::before {
-    content: ''; 
-    position: absolute; 
+    content: '';
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 0; 
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
 }
+
 /* переменные для быстрого написание стилей*/
 
 :root {
@@ -211,7 +212,7 @@ li {
 /* стилизация секции lots */
 
 .lots {
-    padding: 179px 0 149px 0;
+    padding: 179px 0 146px 0;
 }
 
 .lots__heading {
@@ -289,3 +290,57 @@ li {
     display: block;
     margin-top: 30px;
 }
+
+
+/* стилизация секции about */
+
+
+.about {
+    padding: 0 0 180px 0;
+}
+
+.about__column {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    place-items: center;
+    place-content: center;
+}
+
+.about__logo {
+    background-color: #000;
+    padding: 65px 50px;
+    border-radius: 50%;
+}
+
+.about__logo-image {
+    width: 140px;
+    max-width: 100%;
+}
+
+.about__title {
+    font-weight: var(--font-bold);
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #000;
+    margin-right: auto;
+    margin-left: 55px;
+}
+
+.about__text {
+    display:flex;
+    flex-direction: column;
+    gap: 24px;
+    font-weight: var(--font-regular);
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #000;
+}
+
+.about__text p { 
+    width: 693px;
+    max-width: 100%;
+    margin-left: auto;
+}
+
+/* Стилизация footer */
