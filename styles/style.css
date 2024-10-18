@@ -29,7 +29,16 @@
 /* Тут всем шрифтам сразу присвоил шрифт, чтобы не прописывать в каждый селектор */
 
 body {
-    font-family: var(--font-raleway);
+    font-family: var(--font-raleway), serif;
+}
+
+/* Здесь написали стили к контейнеру для того чтобы весь контент страницы был по центру */
+
+.container {
+    width: 1100px;
+    padding: 0 50px 0 50px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 /* Стилизация шапки */
@@ -38,15 +47,8 @@ body {
     padding: 96px 0;
 }
 
-/* Здесь написали стили к контейнеру для того чтобы весь контент страницы был по центру */
 
 
-.container {
-    width: 1100px;
-    padding: 0 50px 0 50px;
-    max-width: 100%;
-    margin: 0 auto;
-}
 
 .grid {
     display: grid;
@@ -67,20 +69,21 @@ li {
     list-style: circle;
 }
 
-.header__links-list-item:first-child {
+.header__links-list-item_no-bullit {
     list-style: none;
 
 }
 
 .header__logo {
     width: 140px;
-    max-width: 100%;
     padding: 0 0 0 9px;
 }
 
+.header__logo-image {
+    max-width: 100%;
+}
 
-
-.no-underline {
+.header__link_active .header__link {
     text-decoration: none;
 }
 
@@ -313,7 +316,6 @@ li {
 }
 
 .about__logo-image {
-    width: 140px;
     max-width: 100%;
 }
 
@@ -327,7 +329,7 @@ li {
 }
 
 .about__text {
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 24px;
     font-weight: var(--font-regular);
@@ -337,10 +339,75 @@ li {
     color: #000;
 }
 
-.about__text p { 
+.about__text p {
     width: 693px;
     max-width: 100%;
     margin-left: auto;
 }
 
 /* Стилизация footer */
+
+
+.footer {
+    padding: 0 0 88px 0;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+}
+
+
+
+.footer__address {
+    display: block;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: var(--font-regular);
+    font-size: 18px;
+    line-height: 135%;
+    color: #000;
+}
+
+.footer__menu {
+    text-align: center;
+}
+
+.footer__menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: -1;
+    list-style: none;
+}
+
+.footer__menu-link_active .footer__menu-link {
+    text-decoration: none;
+}
+
+
+
+.footer__menu-link {
+    font-weight: var(--font-regular);
+    font-size: 18px;
+    color: #000;
+}
+
+.footer__social-list {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+.footer__social-list-item {
+    width: 48px;
+    list-style: none;
+}
+
+.footer__social-icon {
+    max-width: 100%;
+}
+
+/* .footer__social-link {
+    
+} */
