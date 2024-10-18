@@ -363,7 +363,6 @@ li {
 .footer__address {
     display: block;
     font-style: normal;
-    font-size: 18px;
     font-weight: var(--font-regular);
     font-size: 18px;
     line-height: 135%;
